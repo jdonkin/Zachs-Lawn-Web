@@ -2,19 +2,22 @@
 <html>
 <head>
 <meta charset="US-ASCII">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
 <title>Zach's Lawn Service</title>
+<script>
+$(function(){$( "#tabs" ).tabs()}); 
+</script>
 </head>
 <body>
 <div class = "header">
 <h1>Zach's Lawn Service</h1><br><br>
 </div>
-<div class = "navBar">
-<ul>
-<li><a href="#homeTab"><span>Home</span></a></li>
-<li><a href="#quotesTab"><span>Get a Quote</span></a></li>
-<li><a href="#contactTab"><span>Contact Us</span></a></li>
+<div id = "tabs">
+<ul >
+<li><a href="#homeTab">Home</a></li>
+<li><a href="#quotesTab">Get a Quote</a></li>
+<li><a href="#contactTab">Contact Us</a></li>
 </ul>
 </div>
 <div id="homeTab">
@@ -33,7 +36,7 @@
 //insert mailing daemon and phone number to call
 </div>
 
-<script>$( "#tabs" ).tabs()</script>
+
 
 
 </body>
