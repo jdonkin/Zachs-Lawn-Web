@@ -1,43 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="tabs.css">
 <meta charset="US-ASCII">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
 <title>Zach's Lawn Service</title>
-<script>
-$(function(){$( "#tabs" ).tabs()}); 
-</script>
 </head>
 <body>
-<div class = "header">
-<h1>Zach's Lawn Service</h1><br><br>
+<div id ="header">
+<h1>Zach's Lawn Service</h1>
 </div>
+
+<div id ="wrapper">
 <div id = "tabs">
-<ul >
-<li><a href="#homeTab">Home</a></li>
-<li><a href="#quotesTab">Get a Quote</a></li>
-<li><a href="#contactTab">Contact Us</a></li>
+<ul class="active">
+<li class = "active"><a href="#services">Services</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#contact">Contact Us</a></li>
 </ul>
 </div>
-<div id="homeTab">
-<h2>High Quality Lawn Service at an affordable price</h2><br>
-//insert div tab for left side lawn service
-//inside div tab include video of lawn being mowed
-//div tab for right side
-//tree trimming video 
-<p>To get a free estimate click on the quote tab</p><br>
-<p>To schedule an appointment choose the schedule appointment tab</p>
-</div>
-<div id="quotesTab">
-//insert angularJS and forms to calculate quote
-</div>
-<div id="contactTab">
-//insert mailing daemon and phone number to call
-</div>
 
+<div id ="services">Test text</div>
+<div id ="pricing">Test text</div>
+<div id ="contact">Test text</div>
 
-
+</div>
 
 </body>
 </html>
