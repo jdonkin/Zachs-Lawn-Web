@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script> 
+google.load("jquery","1.11.0"); 
+google.setOnLoadCallback(function () 
+	{
+	$("#desc div:not(:first)").hide();
+	}
+);
+</script>
 <link rel="stylesheet" href="tabs.css">
 <meta charset="US-ASCII">
 <title>Zach's Lawn Service</title>
@@ -13,16 +22,16 @@
 <div id ="wrapper">
 <div id = "tabs">
 <ul class="active">
-<li class = "active"><a href="#services">Services</a></li>
-<li><a href="#pricing">Pricing</a></li>
-<li><a href="#contact">Contact Us</a></li>
+<li class = "active">Services</li>
+<li>Pricing</li>
+<li>Contact Us</li>
 </ul>
 </div>
-
-<div id ="services">Test text</div>
-<div id ="pricing">Test text</div>
-<div id ="contact">Test text</div>
-
+<div id = "desc">
+<div>Test text</div>
+<div>Test text</div>
+<div>Test text</div>
+</div>
 </div>
 
 </body>
