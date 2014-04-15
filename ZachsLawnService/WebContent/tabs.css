@@ -54,15 +54,14 @@ body{
 	background: #efefef;
 	border: 1px solid #efefef;
 }
-#desc {
-	
-	width:100%;
-}
+
 #desc div{
 	clear:left;
 	background: #ccc;
-	width:100%;
+	width:700px;
 	height:100%;
+	margin-right:auto;
+	margin-left:auto;
 }
 #desc h1{
 	color:white;
