@@ -1,35 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<script src = jQuery.js></script>
+<script>
+	$(document).ready(function() {
+		$("#desc").show();
+		$("#pricing, #contact").hide();
+	});
+</script>
 <link rel="stylesheet" href="tabs.css">
 <meta charset="US-ASCII">
 <title>Zach's Lawn Service</title>
 </head>
 <body>
-<div id ="header">
-<h1>Zach's Lawn Service</h1>
-</div>
+	<div id="header">
+		<h1>Zach's Lawn Service</h1>
+	</div>
 
-<div id ="wrapper">
-<div id = "tabs">
-<ul>
-<li>Services</li>
-<li><a href="Pricing.html">Pricing</a></li>
-<li><a href="Contact.html">Contact Us</a></li>
-</ul>
-</div>
-<div id = "desc">
-<h1>Services</h1>
-<h3>We offer a variety of services including:</h3>
-<h3>Lawnmowing</h3>
-<iframe width="560" height="315" src="//www.youtube.com/embed/I6LpBszQJfk" frameborder="0" allowfullscreen></iframe>
-<h3>Edging</h3>
-<iframe width="420" height="315" src="//www.youtube.com/embed/mKC3xCH61Ug" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
+	<div id="wrapper">
+		<div id="tabs">
+			<ul>
+				<li id ="services">Services</li>
+				<li id = "price">Pricing</li>
+				<li id="cont">Contact Us</li>
+			</ul>
+		</div>
+		<div id="desc">
+			<h1>Services</h1>
+			<h3>We offer a variety of services including:</h3>
+			<h3>Lawnmowing</h3>
+			<iframe width="560" height="315"
+				src="//www.youtube.com/embed/I6LpBszQJfk" frameborder="0"
+				allowfullscreen></iframe>
+			<h3>Edging</h3>
+			<iframe width="420" height="315"
+				src="//www.youtube.com/embed/mKC3xCH61Ug" frameborder="0"
+				allowfullscreen></iframe>
+		</div>
+		<div id = "pricing">
+			<h1>Get a Quote</h1>
 
+		</div>
+		<div id = "contact">
+			<h1>Contact Us</h1>
+			<h3>Call Us</h3>
+			<h4>801-647-4496</h4>
+			<h3>Send us an email</h3>
+
+		</div>
+	</div>
+<script>
+	$("#price").click(function(){
+		$("#pricing").show();
+		$("#desc, #contact").hide();
+	});
+	$("#cont").click(function(){
+		$("#contact").show();
+		$("#desc, #pricing").hide();
+	});
+	$("#services").click(function(){
+		$("#desc").show();
+		$("#pricing, #contact").hide();
+	});
+</script>
 </body>
 </html>
